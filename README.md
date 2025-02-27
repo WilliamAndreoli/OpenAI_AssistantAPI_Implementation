@@ -1,52 +1,33 @@
-# Projeto Chat com OpenAI
+# Assistente Pessoal de Treinamento
 
-Este projeto é uma aplicação de chat desenvolvida em Angular que utiliza a API da OpenAI para interagir com um modelo de linguagem. O objetivo principal é permitir que os usuários enviem mensagens e recebam respostas geradas pela inteligência artificial, proporcionando uma experiência de conversa interativa.
+Este projeto implementa um assistente pessoal de treinamento utilizando a API da OpenAI. O assistente é projetado para fornecer orientações sobre exercícios físicos e nutrição, ajudando os usuários a alcançarem seus objetivos de fitness.
 
 ## Funcionalidades
 
-- **Envio de Mensagens**: Os usuários podem digitar mensagens e enviá-las para a API da OpenAI.
-- **Respostas em Tempo Real**: As respostas da IA são exibidas instantaneamente na interface do usuário.
-- **Interface Intuitiva**: A aplicação possui uma interface amigável, facilitando a interação do usuário.
+- **Criação de Assistente**: O código permite a criação de um assistente personalizado que pode fornecer conselhos sobre treinamento e nutrição.
+- **Interação em Threads**: O assistente pode interagir com os usuários em um formato de thread, permitindo um diálogo contínuo.
+- **Mensagens Dinâmicas**: O assistente pode responder a perguntas específicas sobre treinamento, como "Quantas repetições eu preciso fazer para construir músculos magros?".
+- **Monitoramento de Execução**: O código inclui uma função para monitorar a execução das interações com o assistente, garantindo que as respostas sejam recebidas antes de prosseguir.
 
 ## Tecnologias Utilizadas
 
-- **Angular**: Framework para construção da interface do usuário.
-- **TypeScript**: Linguagem de programação utilizada para garantir a tipagem estática e melhorar a manutenção do código.
-- **API da OpenAI**: Utilizada para gerar respostas baseadas nas mensagens enviadas pelos usuários.
+- **OpenAI API**: Para a criação e gerenciamento do assistente e suas interações.
+- **Python**: Linguagem de programação utilizada para implementar a lógica do assistente.
+- **dotenv**: Para gerenciar variáveis de ambiente, como chaves de API.
+- **Logging**: Para registrar informações e erros durante a execução do código.
 
 ## Aprendizados
 
 Durante o desenvolvimento deste projeto, aprendi:
 
-- **Integração com APIs**: Como fazer chamadas para APIs externas e manipular as respostas recebidas.
-- **Gerenciamento de Estado**: A importância de gerenciar o estado da aplicação para garantir uma experiência de usuário fluida.
-- **Validação de Formulários**: Como implementar validações em formulários para garantir que os dados enviados sejam válidos.
-- **Melhores Práticas em Angular**: Aprendi sobre a estrutura de um projeto Angular e como organizar componentes e serviços de forma eficiente.
+1. **Integração com APIs**: Como integrar e interagir com a API da OpenAI, incluindo a criação de assistentes e o gerenciamento de threads.
+2. **Gerenciamento de Estado**: A importância de gerenciar o estado das interações, garantindo que as respostas sejam recebidas e processadas corretamente.
+3. **Tratamento de Erros**: Como implementar um sistema de logging para capturar e registrar erros, facilitando a depuração e a manutenção do código.
+4. **Estruturas de Dados**: A utilização de estruturas de dados para armazenar e manipular mensagens e respostas de forma eficiente.
 
-## Como Executar o Projeto
+## Como Usar
 
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu_usuario/seu_repositorio.git
-   ```
-2. Navegue até o diretório do projeto:
-   ```bash
-   cd seu_repositorio
-   ```
-3. Instale as dependências:
-   ```bash
-   npm install
-   ```
-4. Execute a aplicação:
-   ```bash
-   ng serve
-   ```
-5. Acesse a aplicação em seu navegador: [http://localhost:4200](http://localhost:4200)
-
-## Contribuições
-
-Sinta-se à vontade para contribuir com melhorias ou correções. Pull requests são bem-vindos!
-
-## Licença
-
-Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+1. Clone o repositório.
+2. Instale as dependências necessárias (ex: `openai`, `python-dotenv`).
+3. Configure suas variáveis de ambiente com as chaves da API da OpenAI.
+4. Execute o script `main.py` para interagir com o assistente.
